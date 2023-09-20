@@ -74,13 +74,6 @@
   display: flex;
 } 
 
-//in case screen size is below 600px
-@media screen and (max-width: 600px) {
-  .logoBox{
-    display: flex;
-    flex-direction: column; 
-  }
-}
 
 @media screen and (max-width: 380px) {
   .conNavbar{

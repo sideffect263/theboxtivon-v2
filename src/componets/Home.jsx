@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import ReactPlayer from "react-player"
 
 
 function Home() {
