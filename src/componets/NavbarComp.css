@@ -1,0 +1,95 @@
+.brandText{
+  font-size: xx-large;
+  display: flex;
+  flex: 1;;
+  margin: 0;
+
+}
+
+.conNavbar{
+  justify-content: center!important;
+}
+
+.brandText a{
+}
+
+.linkText{
+  font-size: x-large;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  
+}
+
+.linkBox{
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.signNow{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.dropdown-menu.show{
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  left: -80%;
+  top:120%;
+}
+
+.dropdownCon a{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navDropText a.dropdown-item{
+  text-align: center;
+  font-size: large;
+}
+
+
+.logoBox{
+
+  display: flex;
+  flex:3;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.logo{
+  max-height: 80px;
+  max-width: 120px;
+  width: 80%;
+  display: flex;
+} 
+
+//in case screen size is below 600px
+@media screen and (max-width: 600px) {
+  .logoBox{
+    display: flex;
+    flex-direction: column; 
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .conNavbar{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+  .logoBox{
+    align-items: center;
+  }
+}
