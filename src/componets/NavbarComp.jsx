@@ -13,19 +13,19 @@ function NavbarComp() {
         <Container className='conNavbar'>
             <div className='logoBox'>
             <img src={homeLogo} alt='logo' className='logo'/>
-          <Navbar.Brand className='brandText' href="#home">fitness&studio</Navbar.Brand>
+          <Navbar.Brand className='brandText' href="/">fitness&studio</Navbar.Brand>
           </div>
           <div className='linkBox'>
           <Navbar.Toggle className='' aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className='' id="basic-navbar-nav">
             <Nav className="linkText">
                 <div className='signNow'>
-              <Nav.Link href="#home">בית</Nav.Link>
+              <Nav.Link href="/">בית</Nav.Link>
               </div>
 
               <div className='dropdownCon'>
               <NavDropdown title="תפריט" id="basic-nav-dropdown" className='navDropText'>
-                <NavDropdown.Item href="#action/3.1">הסטודיו</NavDropdown.Item>
+                <NavDropdown.Item href="/studio">הסטודיו</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">סוגי אימונים</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">לוח אימונים</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">טיפולים פיזיוטרפיים</NavDropdown.Item>
