@@ -31,9 +31,6 @@ function Home() {
         <div className="mainHome">
             <div className="firstItem">
 
-                <video autoPlay loop muted className="introVideo">
-                    <source src={videoSource} type="video/mp4" />
-                </video>
                 <div className="introVideo"
                   dangerouslySetInnerHTML={{
                     __html: `<video className="app__backgroundVideo" autoplay loop muted playsinline>
