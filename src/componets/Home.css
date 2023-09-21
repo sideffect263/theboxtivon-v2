@@ -24,8 +24,49 @@
 
 .introVideo{
     height: 100%;
-    width: 100%;
-    border-width: 30px;
+    border-width: 1cap;
     border-style: solid;
-    border-color: black;
+    border-color:greenyellow;
+    border-radius: 3vh;
+    display: flex;
+    flex: 1;
+    max-width: fit-content;
 }
+
+
+
+
+.introText{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1000px){
+    #rightIntroVideo{
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px){
+
+    .firstItem{
+        margin-top: 3rem;
+        width: 80%;
+        flex-direction: column;
+        height: 100%;
+        max-width: fit-content;
+    }
+
+    .introVideo{
+        max-width: 100%;
+        max-height: 50%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .introVideo{
+        max-height: 30%;
+    }
+}
+
