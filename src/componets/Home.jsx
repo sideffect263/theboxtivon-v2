@@ -6,8 +6,11 @@ import vid3 from "../assets/videos/iphone-size/vid3.mp4"
 import vid4 from "../assets/videos/iphone-size/vid4.mp4"
 import vid5 from "../assets/videos/iphone-size/vid5.mp4"
 import vid6 from "../assets/videos/iphone-size/vid6.mp4"
+import indoorImg from '../assets/infa/indoor.jpg'
 
 const vids = [vid1, vid2, vid3, vid4, vid5, vid6];
+const longText1="אנו מאמינים באישיות ובהתאמה מוחלטת לצרכי הכל אחד. שיטת האימון האישית שלנו שואפת לספק לך חוויה מותאמת אישית, כך שתוכל להשיג את התוצאות שאתה מחפש באופן יעיל ומהיר.";
+const longText2="לאור החידושים המתמידים בתחום הכושר, אנו משתמשים בטכנולוגיה מתקדמת לניתוח המידע האישי שלך, מה שמאפשר לנו לכפול את התוצאות ולהקנות את ההמשך האופטימלי לתוכנית האימון שלך.";
 
 //generate ranom number
 const randomNum = () => {
@@ -37,12 +40,12 @@ function Home() {
 
                 <div className="introText">
                 <div className="stacked-sections">
-        <div className="section">
+      <a href="/studio" className="section">
           {/* Content for the first section */}
           <div className="section-text">
           <h3>אימוני גברים</h3>
           </div>
-        </div>
+        </a>
         <div className="section">
           {/* Content for the second section */}
           <div className="section-text">
@@ -72,21 +75,30 @@ function Home() {
 
             </div>
 
-            <div className="firstToSeconedBreak">
+            <a href="/contactPage" className="firstToSeconedBreak">
                 <div className="firstToSeconedBreakText">
                     <h2>!קבעו שיעור היום</h2>
-                    </div>  
                     </div>
-
+                    </a>
             
             <div className="secondItem">
-
-
+                <div className="imgCon">
+                    <img src={indoorImg} alt="img" />
                 </div>
 
+                <div className="textCon">
+                    <h2>הסטודיו</h2>
+                    <h2>שלנו</h2>
+                    <p>
+                    {longText1}
+                    </p>
+                    
+                    <p id="hideWhenShort">
+                    {longText2}
+                    </p>
+</div>
 
-
-
+</div>
 
 
 
