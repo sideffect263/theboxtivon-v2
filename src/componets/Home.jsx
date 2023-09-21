@@ -30,13 +30,18 @@ function Home() {
     return (
         <div className="mainHome">
             <div className="firstItem">
-            <div className="videoDiv">
 
                 <video autoPlay loop muted className="introVideo">
                     <source src={videoSource} type="video/mp4" />
                 </video>
-                </div>
-
+                <div className="introVideo"
+                  dangerouslySetInnerHTML={{
+                    __html: `<video className="app__backgroundVideo" autoplay loop muted playsinline>
+              <source src=${videoSource} type="video/mp4" />
+              Your browser does not support the video tag.
+                         </video>`,
+                  }}
+                />
 
                 <div className="introText">
                 <div className="stacked-sections">

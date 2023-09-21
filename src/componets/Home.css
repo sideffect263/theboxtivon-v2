@@ -45,7 +45,7 @@
     justify-content: center;
     width: 98%;
     border-radius: 3vh;
-    background-color: rgb(181, 228, 140,0.8);
+    background-color: rgb(181, 228, 140,0.5);
     margin-top: 8rem;
     max-height: 25%;
 }
@@ -97,12 +97,7 @@
     max-width: fit-content;
 }
 
-.videoDiv{
-    height: 100%;
-    display: flex;
-    flex: 1;
-    max-width: fit-content;
-}
+
 
 
 
@@ -211,9 +206,6 @@
     }
     .firstItem{
         max-height: 500px;
-    }
-    .secondItem{
-        max-height: 450px;
     }
     .videoDiv{
         max-height: 300px;
