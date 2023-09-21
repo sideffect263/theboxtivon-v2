@@ -1,25 +1,65 @@
 .mainHome{
     background-color: #f5f5f5;
     background-image: url("https://www.oganim-dvir.co.il/images/project_models_image1_4.jpg?1691712000022");
-    height: 100vh;
+    height: 2336px;
     width: 100%;
     display: flex;
     flex:1;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;    
 }
 
 .firstItem{
     display: flex;
+    margin-top: 6rem;
+    flex: 1;
+    max-height: 420px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 98%;
+    border-radius: 3vh;
+    background-color: rgba(124, 164, 71, 0.316);
+
+}
+
+.firstToSeconedBreak{
+    display: flex;
+    flex: 1;
+    max-height: 10%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20vh;
+    background-color: #386641;
+}
+
+.secondItem{
+    display: flex;
+    flex: 1;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 98%;
-    height: 50%;
     border-radius: 3vh;
     background-color: rgba(124, 164, 71, 0.316);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #386641;
+    margin-top: 8rem;
+}
 
+.firstToSeconedBreak:hover {
+    background-color: #344e41; /* Light green background on hover */
+    transform: scale(1.05); /* Enlarge slightly on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+    transition-duration: 200ms;
+  }
+
+.firstToSeconedBreakText{
+    color: #f0ead2;
 }
 
 .introVideo{
@@ -33,6 +73,13 @@
     max-width: fit-content;
 }
 
+.videoDiv{
+    height: 100%;
+    display: flex;
+    flex: 1;
+    max-width: fit-content;
+}
+
 
 
 
@@ -40,7 +87,51 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    height: 100%;
 }
+
+.introText h3{
+    font-size: xx-large;
+}
+
+
+.stacked-sections {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section {
+    background-color: #f0f0f0; /* Light gray background */
+    flex: 1;
+    border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .section-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: black;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .section:hover {
+    background-color: #9cff56; /* Light green background on hover */
+    transform: scale(1.05); /* Enlarge slightly on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+    
+  }
 
 @media screen and (max-width:1000px){
     #rightIntroVideo{
@@ -54,19 +145,34 @@
         margin-top: 3rem;
         width: 80%;
         flex-direction: column;
-        height: 100%;
+        max-height: 1000px;
         max-width: fit-content;
     }
 
     .introVideo{
         max-width: 100%;
-        max-height: 50%;
+        max-height: 100%;
+        flex: 2;
+    }
+    .introText{
+        max-width: 100%;
+        max-height: 30%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width:450px){
     .introVideo{
-        max-height: 30%;
+        max-height: 600px;
+    }
+    .firstItem{
+        max-height: 500px;
+    }
+    .videoDiv{
+        max-height: 300px;
+    }
+    .introText h3{
+        font-size: larger;
     }
 }
 

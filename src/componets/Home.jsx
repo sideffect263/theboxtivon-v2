@@ -27,9 +27,14 @@ function Home() {
     return (
         <div className="mainHome">
             <div className="firstItem">
+            <div className="videoDiv">
+
                 <video autoPlay loop muted className="introVideo">
                     <source src={videoSource} type="video/mp4" />
                 </video>
+                </div>
+
+
                 <div className="introText">
                 <div className="stacked-sections">
         <div className="section">
@@ -53,20 +58,39 @@ function Home() {
         <div className="section">
           {/* Content for the fourth section */}
           <div className="section-text">
-          <h3>טיפולים תקופתיים</h3>
+          <h3>טיפולים פיזיוטרפיים</h3>
           </div>
         </div>
         </div>
       
 
                     </div>
-
                     <video autoPlay loop muted className="introVideo" id='rightIntroVideo'>
                     <source src={videoSource} type="video/mp4" />
                 </video>
 
 
             </div>
+
+            <div className="firstToSeconedBreak">
+                <div className="firstToSeconedBreakText">
+                    <h2>!קבעו שיעור היום</h2>
+                    </div>  
+                    </div>
+
+            
+            <div className="secondItem">
+
+
+                </div>
+
+
+
+
+
+
+
+
         </div>
     )
 }
