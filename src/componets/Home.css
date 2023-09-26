@@ -1,7 +1,48 @@
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.homeContent{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+/* Home.css */
+.getInTouchDiv{
+    display: flex;
+    height: 150px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #386641;
+}
+
+.get-in-touch {
+    margin-top: 50px; /* Adjust spacing as needed */
+    text-align: center;
+    width: 100%;
+  }
+  
+  .get-in-touch h2 {
+    font-size: 2rem;
+  }
+  
+  .get-in-touch p {
+    font-size: 1.2rem;
+  }
+  
+  .social-logo {
+    width: 60px; /* Adjust the size of the social logos */
+    height: 60px;
+    margin: 0 10px; /* Add spacing between logos */
+  }
+  
+
 .mainHome{
     background-color: #f5f5f5;
     background-image: url("https://www.oganim-dvir.co.il/images/project_models_image1_4.jpg?1691712000022");
-    height: 2336px;
+    height: 2250px;
     width: 100%;
     display: flex;
     flex:1;
@@ -9,6 +50,40 @@
     align-items: center;
     justify-content: flex-start;    
 }
+
+.linkingPage{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    align-content: center;
+    
+    justify-content: center;
+}
+
+.startOfliPage{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.liPageText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 9rem;
+}
+
+.liPageText h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
 
 .firstItem{
     display: flex;
@@ -45,9 +120,27 @@
     justify-content: center;
     width: 98%;
     border-radius: 3vh;
-    background-color: rgb(181, 228, 140,0.5);
+    background-color: rgb(181, 228, 140,0.7);
     margin-top: 8rem;
     max-height: 25%;
+}
+
+.secondItem h2{
+    color: #081c15;
+    font-size:2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+    width: 100%;
+}
+
+.secondItem p{
+    color: #081c15;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
 }
 
 .imgCon{
@@ -64,9 +157,158 @@
     height: 100%;
     border-radius: 3vh;
 }
+.ourClasses{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    height: 3000px;
+
+
+}
+
+.classCon1{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5ece9;
+
+}
+
+.classConText{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-collapse: collapse;
+
+}
+
+.classConTextRow1{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.classConTextRow2{
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #386641;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.classConTextRow2 p{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+.classConTextRow3{
+    
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.classConTextRow1Text{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #386641;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+
+.classConImg{
+    display: flex;
+    height: 100%;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #386641;
+    border-collapse: collapse;
+
+}
+
+.classCon1 img{
+    height: 100%;
+    max-height: 540px;
+    width: 100%;
+    position: sticky;
+    top: 130px;
+}
+
+.classConBaner{
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #386641;
+    border-collapse: collapse;
+
+}
+#coachBlacked{
+    background-color:#030806;
+    color: #e5ece9;
+}
+
+.classConBaner h1{
+    margin-top: 1rem;
+    top:210px;
+    position: sticky;
+    letter-spacing: normal;
+    font-size: 13vw;
+    color: #8bdf4e;
+}
+
 
 .textCon{
     display: flex;
+    height: 100%;
     flex: 1;
     flex-direction: column;
     align-items: center;
@@ -181,10 +423,25 @@
         flex-direction: column-reverse;
         max-height: 700px;
     }
+    .classConImg{
+        flex: 3;
+    }
+    .classConImg img{
+        max-height: 100px;
+        top:183px
+    }
+    .classConTextRow2{
+        flex: 5;
+    }
 }
 
 
 @media screen and (max-width:550px){
+
+    .liPageText{
+        margin-right: 0rem;
+        align-items: center;
+    }
 
     .firstItem{
         margin-top: 3rem;

@@ -25,12 +25,12 @@ function NavbarComp() {
 
               <div className='dropdownCon'>
               <NavDropdown title="תפריט" id="basic-nav-dropdown" className='navDropText'>
-                <NavDropdown.Item href="/studio">הסטודיו</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">סוגי אימונים</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">לוח אימונים</NavDropdown.Item>
+                <NavDropdown.Item href="/#studioItem">הסטודיו</NavDropdown.Item>
+                <NavDropdown.Item href="/#action/3.2">סוגי אימונים</NavDropdown.Item>
+                <NavDropdown.Item href="/studio">לוח אימונים</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">טיפולים פיזיוטרפיים</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="#contactForm">
                   צור קשר
                 </NavDropdown.Item>
               </NavDropdown>

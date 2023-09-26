@@ -2,18 +2,19 @@
     display: flex;
     flex: 1;
     background-color: aliceblue;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
-  
+
+
   .about-content {
     background-color: '#023047';
     display: flex;
     flex: 1;
+    width: 100%;
     flex-direction: column;
     margin: 1rem;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
@@ -59,9 +60,19 @@
   }
 
   #traning-scaduel{
-    background-color: #023047;
+    background-color: #a2c0a9;
     height: 300rem;
     width: 100%;
+  }
+
+  #traning-scaduel p{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #customP{
+    font-size: 3rem;
+    text-align: center;
   }
   
   .about h2 {
@@ -79,6 +90,43 @@
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
+
+  .getInTouchDiv{
+    display: flex;
+    height: 150px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #386641;
+    width: 100%;
+}
+
+.get-in-touch {
+    margin-top: 50px; /* Adjust spacing as needed */
+    text-align: center;
+    width: 100%;
+  }
+  
+  .get-in-touch h2 {
+    font-size: 2rem;
+  }
+  
+  .get-in-touch p {
+    font-size: 1.2rem;
+  }
+  
+  .social-logo {
+    width: 60px; /* Adjust the size of the social logos */
+    height: 60px;
+    margin: 0 10px; /* Add spacing between logos */
+  }
+
+  .iframeClass{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #386641;
+  }
+  
+
 
 
     @media screen and (max-width: 700px) {
