@@ -16,8 +16,6 @@ import { Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 
-tempImg();
-treatImg();
 const vids = [vid1, vid2, vid3, vid4, vid5, vid6];
 const longText1="אנו מאמינים באישיות ובהתאמה מוחלטת לצרכי הכל אחד. שיטת האימון האישית שלנו שואפת לספק לך חוויה מותאמת אישית, כך שתוכל להשיג את התוצאות שאתה מחפש באופן יעיל ומהיר.";
 const longText2="לאור החידושים המתמידים בתחום הכושר, אנו משתמשים בטכנולוגיה מתקדמת לניתוח המידע האישי שלך, מה שמאפשר לנו לכפול את התוצאות ולהקנות את ההמשך האופטימלי לתוכנית האימון שלך.";
