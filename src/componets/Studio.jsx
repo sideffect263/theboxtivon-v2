@@ -11,10 +11,12 @@ function Studio() {
 
   
 const [iframeState, setIframeState] = React.useState(false);
+const [dontShow, setDontShow] = React.useState('show');
 
   const iframeLoaded = () => {
     console.log('iframe loaded');
     setIframeState(true);
+    setDontShow('dontShow');
   }
   
   
@@ -59,17 +61,23 @@ const [iframeState, setIframeState] = React.useState(false);
       </div>
 
         <Iframe
-        url='https://app.boostapp.co.il/Rest.php?StudioUrl=60c59a38477cb'
+        
         title='training-schedule'
-        width={iframeState ? '100%' : '0'}
-        height={iframeState ? '300rem' : '0'}
+        width={iframeState ? 'auto' : '0'}
+        height={iframeState ? '1500rem' : '0'}
+        scrolling='auto'
         ariaLabel='live-updating-studio-training sceduale'
-        name='asdsad'
+        name='live-updating-studio-training sceduale'
+        loading='lazy'
+        src='https://app.boostapp.co.il/Rest.php?StudioUrl=60c59a38477cb'
         className='iframeClass'
         onLoad={iframeLoaded}
         allowFullScreen
-        loading='eager'
         />
+      </div>
+      <div className="badLoading" id={dontShow}>
+        <h1>אנא המתן</h1>
+        <h2>אם זה זמן הטעינה ארוך, נסו שוב מאוחר יותר</h2>
       </div>
       <div id='contactForm' className="getInTouchDiv">
             <Row className="get-in-touch">

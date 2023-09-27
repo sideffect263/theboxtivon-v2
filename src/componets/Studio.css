@@ -28,6 +28,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
 
   }
@@ -93,7 +94,7 @@
 
   .getInTouchDiv{
     display: flex;
-    height: 150px;
+    height: 100%;
     border-top-width: 2px;
     border-top-style: solid;
     border-top-color: #386641;
@@ -125,6 +126,10 @@
     border-style: solid;
     border-color: #386641;
   }
+
+  #dontShow{
+    display: none;
+  }
   
 
 
@@ -132,12 +137,9 @@
     @media screen and (max-width: 700px) {
     .list-of-topics{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
-        height: 20rem;
-    
-    
+        align-items: center;    
     }   
     }
   

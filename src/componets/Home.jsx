@@ -7,7 +7,11 @@ import vid4 from "../assets/videos/iphone-size/vid4.mp4"
 import vid5 from "../assets/videos/iphone-size/vid5.mp4"
 import vid6 from "../assets/videos/iphone-size/vid6.mp4"
 import indoorImg from '../assets/infa/indoor.jpg'
-import tempImg from '../assets/infa/fpc-image.jpeg'
+import tempImg from '../assets/infa/omri-front.jpg'
+import menImg from '../assets/infa/mensImg.png'
+import womenImg from '../assets/infa/womanImg.png'
+import personalImg from '../assets/infa/persoImg.png'
+import treatImg from '../assets/infa/treatImg.png'
 import { Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
@@ -133,7 +137,7 @@ function Home() {
 
                 <div id='menGroup' className="classCon1">
                 <div className="classConImg">
-                      <img src={tempImg} alt="img" />
+                      <img src={menImg} alt="img" />
                     </div>
 
                     <div className="classConText">
@@ -200,7 +204,7 @@ function Home() {
                       <h1>02</h1>
                     </div>
                     <div className="classConImg">
-                      <img src={tempImg} alt="img" />
+                      <img src={womenImg} alt="img" />
                     </div>
                    
                    
@@ -215,7 +219,7 @@ function Home() {
 
 
                 <div className="classConImg">
-                      <img src={tempImg} alt="img" />
+                      <img src={personalImg} alt="img" />
                     </div>
 
                     <div className="classConText">
@@ -224,7 +228,7 @@ function Home() {
                 
                     </div>
                     <div className="classConTextRow1Text">
-                    <h2>אימוני</h2>
+                    <h2>אימונים</h2>
                     <h2>אישיים</h2>
                       </div>
                     </div>

@@ -12,7 +12,7 @@
 /* Home.css */
 .getInTouchDiv{
     display: flex;
-    height: 150px;
+    height: 100%;
     border-top-width: 2px;
     border-top-style: solid;
     border-top-color: #386641;
@@ -178,7 +178,7 @@
 
 .classConText{
     display: flex;
-    flex: 2;
+    flex: 3;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -272,7 +272,7 @@
 
 .classCon1 img{
     height: 100%;
-    max-height: 540px;
+    max-height: 590px;
     width: 100%;
     position: sticky;
     top: 130px;
@@ -281,7 +281,7 @@
 .classConBaner{
     display: flex;
     height: 100%;
-    flex: 1;
+    flex: 2;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -427,7 +427,7 @@
         flex: 3;
     }
     .classConImg img{
-        max-height: 100px;
+        max-height: 500px;
         top:132px
     }
     .classConTextRow2{
@@ -465,7 +465,7 @@
 
 @media screen and (max-width:450px){
     .introVideo{
-        max-height: 600px;
+        max-height: 420px;
     }
     .firstItem{
         max-height: 500px;
