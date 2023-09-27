@@ -310,6 +310,7 @@
     justify-content: flex-start;
     height: 100%;
     border-collapse: collapse;
+    background-color: #386641;
 }
 
 .treatmentVideo video{
@@ -512,6 +513,9 @@
         max-height: 15%;
 
     }
+    .classCon1 img{
+        max-height: 50vw;
+    }
 }
 
 @media screen and (max-width:700px){
@@ -591,7 +595,7 @@
 
 @media screen and (max-width:380px){
     .classConImg img{
-        max-height: 20%;
+        max-height: 37vh;
         top:183px
     }
     .treatmentVideo video{

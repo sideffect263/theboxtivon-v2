@@ -26,9 +26,8 @@ function NavbarComp() {
               <div className='dropdownCon'>
               <NavDropdown title="תפריט" id="basic-nav-dropdown" className='navDropText'>
                 <NavDropdown.Item href="/#studioItem">הסטודיו</NavDropdown.Item>
-                <NavDropdown.Item href="/#action/3.2">סוגי אימונים</NavDropdown.Item>
                 <NavDropdown.Item href="/studio">לוח אימונים</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">טיפולים פיזיוטרפיים</NavDropdown.Item>
+                <NavDropdown.Item href="/#clinicItemId">טיפולים פיזיוטרפיים</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#contactForm">
                   צור קשר
