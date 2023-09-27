@@ -13,9 +13,6 @@
 .getInTouchDiv{
     display: flex;
     height: 100%;
-    border-top-width: 2px;
-    border-top-style: solid;
-    border-top-color: #386641;
 }
 
 .get-in-touch {
@@ -52,7 +49,8 @@
 }
 
 .linkingPage{
-    height: 300px;
+    height: 500px;
+    background-color: #dce3e0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -158,10 +156,9 @@
     border-radius: 3vh;
 }
 .ourClasses{
-    height: 1000px;
     display: flex;
     flex-direction: column;
-    height: 3000px;
+    height: 5000px;
 
 
 }
@@ -305,6 +302,28 @@
     color: #8bdf4e;
 }
 
+.treatmentVideo{
+    display: flex;
+    flex: 2 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.treatmentVideo video{
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #386641;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+    position: sticky;
+    top:130px;
+}
+
 
 .textCon{
     display: flex;
@@ -401,6 +420,83 @@
     
   }
 
+  .ourTeam{
+    display: flex;
+    flex-direction: row;
+    height: 65vw;
+    background-color: #e5ece9;
+  }
+
+  .ourTeamItem{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ourTeamRow1{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+
+ 
+.ourTeamRow1Img{
+    display: flex;
+    flex: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #386641;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourTeamRow1Img img{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+  .ourTeamRow2{
+    flex-direction: row;
+    display: flex;
+    flex: 1;
+  }
+
+  .ourTeamRow2Text{
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #386641;
+    border-collapse: collapse;
+    background-color: white;
+
+  }
+
+
+
+/* Define the glow animation */
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 223, 186, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 223, 186, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 223, 186, 0.8);
+    }
+  }
+  
+  /* Apply the animation to the scroll-glow class */
+  .scroll-glow {
+    animation: glow 2s ease-in-out; /* Adjust the duration as needed */
+  }
+  
+
 
   @media screen and (max-width:1200px){
      #hideWhenShort{
@@ -426,10 +522,7 @@
     .classConImg{
         flex: 3;
     }
-    .classConImg img{
-        max-height: 500px;
-        top:132px
-    }
+
     .classConTextRow2{
         flex: 5;
     }
@@ -437,6 +530,24 @@
 
 
 @media screen and (max-width:550px){
+
+    .ourTeam{
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ourTeamItem{
+        width: 50vw;
+    }
+
+    .ourTeamRow1Img img{
+        max-height: 200vw;
+        max-width: 200vw;
+    }
+
+
 
     .liPageText{
         margin-right: 0rem;
@@ -478,3 +589,13 @@
     }
 }
 
+@media screen and (max-width:380px){
+    .classConImg img{
+        max-height: 20%;
+        top:183px
+    }
+    .treatmentVideo video{
+        top:182px;
+    }
+
+}

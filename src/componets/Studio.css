@@ -95,9 +95,7 @@
   .getInTouchDiv{
     display: flex;
     height: 100%;
-    border-top-width: 2px;
-    border-top-style: solid;
-    border-top-color: #386641;
+
     width: 100%;
 }
 

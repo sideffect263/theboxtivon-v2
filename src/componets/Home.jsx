@@ -7,7 +7,8 @@ import vid4 from "../assets/videos/iphone-size/vid4.mp4"
 import vid5 from "../assets/videos/iphone-size/vid5.mp4"
 import vid6 from "../assets/videos/iphone-size/vid6.mp4"
 import indoorImg from '../assets/infa/indoor.jpg'
-import tempImg from '../assets/infa/omri-front.jpg'
+import treatmentVid from '../assets/videos/treatmentVid.mp4'
+import omriFront from '../assets/infa/omriFrontNoBc.png'
 import menImg from '../assets/infa/mensImg.png'
 import womenImg from '../assets/infa/womanImg.png'
 import personalImg from '../assets/infa/persoImg.png'
@@ -71,10 +72,10 @@ function Home() {
           <h3>אימונים אישיים</h3>
           </div>
         </a>
-        <a href="spa" className="section">
+        <a href="#clinicItemId" className="section">
           {/* Content for the fourth section */}
           <div className="section-text">
-          <h3>טיפולים פיזיוטרפיים</h3>
+          <h3>הקליניקה</h3>
           </div>
         </a>
         </div>
@@ -127,7 +128,7 @@ function Home() {
             <div className="startOfliPage">
                 <div className="liPageText">
                     <h2>השיעורים</h2>
-                    <h2>שלנו</h2>
+                    <h2 id='menGroup'>שלנו</h2>
 
                 </div>
                </div>
@@ -136,7 +137,7 @@ function Home() {
 
             <div className="ourClasses">
 
-                <div id='menGroup' className="classCon1">
+                <div  className="classCon1">
                 <div className="classConImg">
                       <img src={menImg} alt="img" />
                     </div>
@@ -158,7 +159,7 @@ function Home() {
                     </div>
                     <div className="classConTextRow3">
                     <div id='coachBlacked' className="classConTextRow1Text">
-                    <h3>מאמן: עומרי דן</h3>
+                    <h3 id='womenGroup'>מאמן: עומרי דן</h3>
                     </div>
                     <div id="hideWhenShort" className="classConTextRow1Text">
                       </div>
@@ -167,13 +168,13 @@ function Home() {
                     </div>
                     
                     <div className="classConBaner">
-                      <h1>01</h1>
+                      <h1 >01</h1>
                     </div>
                    
                    
                 </div>
 
-                <div id='womenGroup' className="classCon1">
+                <div  className="classCon1">
  
 
                     <div className="classConText">
@@ -193,7 +194,7 @@ function Home() {
                     </div>
                     <div className="classConTextRow3">
                     <div id='coachBlacked' className="classConTextRow1Text">
-                    <h3>מאמן: עומרי דן</h3>
+                    <h3 id='personalGroup'>מאמן: עומרי דן</h3>
                     </div>
                     <div id="hideWhenShort" className="classConTextRow1Text">
                       </div>
@@ -212,7 +213,7 @@ function Home() {
                 </div>
 
                 
-                <div id='personalGroup' className="classCon1">
+                <div  className="classCon1">
 
                 <div className="classConBaner">
                       <h1>03</h1>
@@ -252,7 +253,134 @@ function Home() {
                    
                    
                 </div>
+                <div className="linkingPage">
+            <div className="startOfliPage">
+                <div className="liPageText">
+                    <h2>THE BOX</h2>
+                    <h2 id='clinicItemId'>clinic</h2>
+
+                </div>
+               </div>
+           
+            </div>
+
+
+            <div  className="classCon1">
+
+           
+
+                <div id="hideWhenShort" className="classConImg">
+                      <img src={treatImg} alt="img" />
+                    </div>
+
+                    
+                    <div className="classConText">
+                      <div className="classConTextRow1">
+                        <div id="hideWhenShort" className="classConTextRow1Text">
+                
+                    </div>
+                    <div className="classConTextRow1Text">
+                    <h2>טיפולים</h2>
+                    <h2>אישיים</h2>
+                      </div>
+                    </div>
+                    <div className="classConTextRow2">
+                    <p>הטיפולים מתמקדים בטיפוח, התייעצות וטיפול בבעיות שונות במערכת התמיכה והתנועה של הגוף</p>
+                    <p>הם יכולים להיות מועילים במגוון רחב של תחומים, כולל בעיות בשרירים ומפרקים, תאונות ופציעות, בעיות גידים וסדקים, ועוד</p>
+                    <p>הטיפולים נערכים על ידי מומחים מקצועיים שמשלבים ידע רפואי מתקדם עם הבנה מעמיקה של התפקוד הפיזי של הגוף</p>
+                    </div>
+                    <div className="classConTextRow3">
+                    <div id='coachBlacked' className="classConTextRow1Text">
+                    <h3>מטפל: עומרי דן</h3>
+                    </div>
+                    <div id="hideWhenShort" className="classConTextRow1Text">
+                      </div>
+
+                      </div>
+                    </div>
+
+                    <div className="treatmentVideo"
+                  dangerouslySetInnerHTML={{
+                    __html: `<video className="app__backgroundVideo" autoplay loop muted playsinline>
+              <source src=${treatmentVid} type="video/mp4" />
+              Your browser does not support the video tag.
+                         </video>`,
+                  }}
+                />
+                    
+                   
+                   
+                </div>
+                
+
+
+
               </div>
+
+              <div className="linkingPage">
+            <div className="startOfliPage">
+                <div className="liPageText">
+                    <h2>הכירו את</h2>
+                    <h2 id='menGroup'>הצוות</h2>
+
+                </div>
+               </div>
+           
+            </div>
+
+            
+            <div className="ourTeam scroll-glow">
+              
+                    <div className="ourTeamItem">
+                      <div className="ourTeamRow1Img">
+                      <img src={omriFront} alt="img" />
+                      </div>
+                      
+                        <div className="ourTeamRow2Text">
+                          <h2>עומרי דן</h2>
+                          <h3>מאמן אישי</h3>
+                          <a href="https://www.instagram.com/omridann/" target="_blank" rel="noopener noreferrer">
+                             <Image   src={"https://img.freepik.com/premium-vector/purple-gradiend-social-media-logo_197792-1883.jpg?w=2000"} alt="Instagram Logo" className="social-logo" />
+                         </a>
+                         </div>
+                    </div>
+
+                         <div className="ourTeamItem">
+
+                          <div className="ourTeamRow1Img">
+                             <img src={omriFront} alt="img" />
+                         </div>
+
+                         <div className="ourTeamRow2Text">
+                          <h2>עומרי דן</h2>
+                          <h3>מאמן אישי</h3>
+                          <a href="https://www.instagram.com/theboxtivon/" target="_blank" rel="noopener noreferrer">
+                              <Image src={"https://img.freepik.com/premium-vector/purple-gradiend-social-media-logo_197792-1883.jpg?w=2000"} alt="Instagram Logo" className="social-logo" />
+                          </a>
+                          </div>
+
+                          </div>
+
+                          <div className="ourTeamItem">
+                           <div className="ourTeamRow1Img">
+                                <img src={omriFront} alt="img" />
+                           </div>
+
+                           <div className="ourTeamRow2Text">
+                          <h2>עומרי דן</h2>
+                          <h3>מאמן אישי</h3>
+                          <a href="https://www.instagram.com/theboxtivon/" target="_blank" rel="noopener noreferrer">
+                              <Image src={"https://img.freepik.com/premium-vector/purple-gradiend-social-media-logo_197792-1883.jpg?w=2000"} alt="Instagram Logo" className="social-logo" />
+                          </a>
+                        </div>
+
+                      </div>
+                        
+                      
+                    </div>
+
+            
+
 
             <div id='contactForm' className="getInTouchDiv">
             <Row className="get-in-touch">
